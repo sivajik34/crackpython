@@ -6,7 +6,7 @@ list1=list() # built in mutable sequence
 print(type(list1))
 #<class 'list'>
 print(id(list1))
-#140589007633152
+#140589007633152  # memory address sample
 print(dir(list1))
 print(help(list1))
 
@@ -35,15 +35,15 @@ list1[2]=600 #it will change list2 as well
 print(list1)
 print(list2)
 
+# clear function example
 sample_list=[2,5,7,'green',True,8.5]
 print(type(sample_list))
 print(sample_list)
 sample_list.clear()
-print(sample_list)
+print(sample_list) #it will print []
 
 print("sorting list1, It will change list2 as well")
 print(list1.sort()) #it will return None
 print(list2)
 print(list1)
-
 

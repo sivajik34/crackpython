@@ -1,44 +1,44 @@
-list1=[20,50,80]
-print('list1:')
-print(list1)
+x=[20,50,80]
+print("list x:",x)
 
-print('copy list1 to list2 using copy method')
-list2=list1.copy() # shallow copy
+print('copy list x to list y using copy method')
+y=x.copy() # shallow copy
 
-print("now pop element from list2 ; it wont effect list1")
+print("list y:",y)
 
-print(list2.pop())
+print("now pop element from list y ; but it wont effect list x")
 
-print('list2:')
-print(list2)
-print('list1:')
-print(list1)
+print("poped element:",y.pop())
 
-print("add one more element to list1 and list2 wont effect")
+print("list x still contans poped element:",x)
+print("list y:",y)
 
-list1.append(45)
+print("now add one more element 45 to x and y wont effect")
 
+x.append(45)
 
-print("list1",list1)
-print("list2",list2)
+print("list x:",x)
+print("list y:",y)
 
 
 print("copy method in multi dimension elements; if you change copied list it will effect in source list as well")
 
-l1=[20,[50,60],80]
+p=[20,[50,60],80]
 
-print("l1:",l1)
+print("list p:",p)
 
-l2=l1.copy()
+print("copy using copy (swallow) method from p to q")
+q=p.copy()
 
-print("l2:",l2)
+print("list q:",q)
 
-l2[1][0]=980
+print("change 50 to 980 in list q")
+q[1][0]=980
 
-print("l1:",l1)
-print("l2:",l2)
+print("list p:",p)
+print("list q:",q)
 
-print("add element in normal index for l2,it will work,i mean l1 wont effect if you change l2 vice versa")
-l2.append(56)
-print("l1:",l1)
-print("l2:",l2)
+print("add element in normal index for list q,it will work,i mean list p wont effect if you change list q vice versa")
+q.append(56)
+print("list p:",p)
+print("list q:",q)

@@ -10,6 +10,9 @@ print(id(list1))
 print(dir(list1))
 print(help(list1))
 
+my_list=list('xyz') #string is iterable sequence, so it will print ['x','y','z']
+print(my_list)
+
 list1.append(20)
 list1.append(30)
 # list1[2]=40  IndexError: list assignment index out of range

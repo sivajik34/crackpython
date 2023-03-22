@@ -8,4 +8,4 @@ class Example:
 obj=Example()
 
 # it will consider last constructor, and it won't throw any error
-
+# so it will print z

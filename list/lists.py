@@ -21,32 +21,36 @@ list1.append(50)
 
 print(list1)  #[20,30,40,50]
 
-print("copy using equal operator list2=list1")
-list2=list1  # list1 and list2 both reference to same object, so if you change list1 or list2 then it will effect both.
-
-print(list2) #[20,30,40,50]
-print(id(list2)) #it will print same id of list1
-
-
-list2[1]=500 # it will change list1 as well
-
-print(list2)
-print(list1)
-
-list1[2]=600 #it will change list2 as well
-
-print(list1)
-print(list2)
-
 # clear function example
 sample_list=[2,5,7,'green',True,8.5]
 print(type(sample_list))
 print(sample_list)
+print("clear function")
 sample_list.clear()
 print(sample_list) #it will print []
 
-print("sorting list1, It will change list2 as well")
-print(list1.sort()) #it will return None
-print(list2)
-print(list1)
+# + in list
+p=[20,30,40,50]
+q=[35,78,90,20,45,20]
+print("list p:",p)
+print("list q:",q)
+r=p+q
+print("p+q:",r)
+print("20 element count:", r.count(20))
 
+r.extend([90,110,555])
+
+print("after extend list r:",r)
+
+r.reverse()
+
+print("list after reverse",r)
+
+r.remove(20) # it will delete first matching element even 20 number presented multiple times
+print("after remove 20 element",r)
+
+print("110 element index:",r.index(110))
+
+r.insert(2,"yellow")
+
+print("after insert:",r)
